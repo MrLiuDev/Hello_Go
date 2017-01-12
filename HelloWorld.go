@@ -17,6 +17,11 @@ var m, n int = 1, 2
 func main() {
 	var i int
 	var x, y, z = true, false, "Hello"
+
+	s := 3  //短声明变量：使用 ":=" 替代 var 定义明确类型的变量.
+			//注意：只能在函数中使用，函数外只能使用 var
+
+
 	fmt.Println("Hello World")
 	fmt.Println(math.Pi)
 	fmt.Println(add(1, 2))
@@ -27,6 +32,7 @@ func main() {
 	fmt.Println(i, a, b, c)
 	fmt.Println(m, n)
 	fmt.Println(x, y, z)
+	fmt.Println(s)
 }
 
 //函数（1）
